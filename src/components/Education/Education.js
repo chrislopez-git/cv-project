@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SectionHeading from '../../Layout/SectionHeading';
+import AddEntry from '../Buttons/AddEntry';
 
 function Education(props){
 
@@ -8,10 +9,10 @@ function Education(props){
     // to set state we call setInfo. the content inside the useState call is array "info"
 
     const[info, setInfo] = useState({
-        userName: '',
-        phoneNum: '',
-        email: '',
-        location: '',
+        school: '',
+        years: '',
+        gpa: '',
+        focus: '',
     });
 
     // update info[] on each change hopefully
@@ -27,40 +28,42 @@ function Education(props){
             <SectionHeading title="Education History"/>
             
             
-            {/* <input 
+            <input 
             type="text" 
-            name="userName"
-            placeholder="Name"
-            id="userName-input"
+            name="school"
+            placeholder="School Name"
+            id="school-input"
             onChange={handleChange}
-            value={info.userName}
+            value={info.school}
             />
             <input 
             type="text" 
-            name="phoneNum"
-            placeholder="Phone Number"
-            id="PhoneNum-input"
+            name="years"
+            placeholder="Years Attended"
+            id="years-input"
             onChange={handleChange}
-            value={info.phoneNum}
+            value={info.years}
             />
             <input 
             type="text" 
-            name="email"
-            placeholder="Email"
-            id="Email-input"
+            name="gpa"
+            placeholder="GPA"
+            id="gpa-input"
             onChange={handleChange}
-            value={info.email}
+            value={info.gpa}
 
             />
             <input 
             type="text" 
-            name="location"
-            placeholder="Location"
-            id="Location-input"
+            name="focus"
+            placeholder="Major"
+            id="focus-input"
             onChange={handleChange}
-            value={info.location}
+            value={info.focus}
 
-            /> */}
+            />
+            
+            <AddEntry />
         </>
 
     );

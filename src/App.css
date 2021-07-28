@@ -5,6 +5,12 @@
 
 }
 
+.education-section input{
+  width: 100%;
+  margin: 5px;
+  display: block; {/*to have own line */}
+}
+
 .gen-info-section input{
   width: 100%;
   margin: 5px;
@@ -13,4 +19,10 @@
 
 .section-heading {
   border-bottom: 2px solid black;
+}
+
+.work-section input{
+  width: 100%;
+  margin: 5px;
+  display: block; {/*to have own line */}
 }

@@ -8,7 +8,6 @@ import SavePageBtn from './components/Buttons/SavePageBtn';
 function App() {
   return (
     <div className="app">
-      hello
       <div className="save-cv-container">
         <SavePageBtn />
       </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SectionHeading from '../../Layout/SectionHeading';
+import AddEntry from '../Buttons/AddEntry';
 
 function Work(props){
 
@@ -8,10 +9,10 @@ function Work(props){
     // to set state we call setInfo. the content inside the useState call is array "info"
 
     const[info, setInfo] = useState({
-        userName: '',
-        phoneNum: '',
-        email: '',
-        location: '',
+        company: '',
+        position: '',
+        years: '',
+        duties: '',
     });
 
     // update info[] on each change hopefully
@@ -27,40 +28,44 @@ function Work(props){
             <SectionHeading title="Work History"/>
             
             
-            {/* <input 
+            <input 
             type="text" 
-            name="userName"
-            placeholder="Name"
-            id="userName-input"
+            name="company"
+            placeholder="Company"
+            id="company-input"
             onChange={handleChange}
-            value={info.userName}
+            value={info.company}
             />
             <input 
             type="text" 
-            name="phoneNum"
-            placeholder="Phone Number"
-            id="PhoneNum-input"
+            name="position"
+            placeholder="Position"
+            id="position-input"
             onChange={handleChange}
-            value={info.phoneNum}
+            value={info.position}
             />
             <input 
             type="text" 
-            name="email"
-            placeholder="Email"
-            id="Email-input"
+            name="years"
+            placeholder="Time Active"
+            id="years-input"
             onChange={handleChange}
-            value={info.email}
+            value={info.years}
 
             />
             <input 
             type="text" 
-            name="location"
-            placeholder="Location"
-            id="Location-input"
+            name="duties"
+            placeholder="Duties"
+            id="duties-input"
             onChange={handleChange}
-            value={info.location}
+            value={info.duties}
 
-            /> */}
+            />
+
+            <AddEntry />
+
+
         </>
 
     );
